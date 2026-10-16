@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida y Nutrición Saludable - Servicios de Nutrición</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            primary: '#28A746',
+                            secondary: '#9CC944',
+                            dark: '#1e7532',
+                            light: '#f2f9f1'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f4fbf5 0%, #e8f5e9 100%);
+            min-height: 100vh;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #28A746 0%, #9CC944 100%);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #28A746 0%, #9CC944 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 15px -3px rgba(40, 167, 70, 0.12), 0 2px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px -5px rgba(40, 167, 70, 0.25), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-card:active {
+            transform: translateY(-1px);
+        }
+
+        .badge-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .6; }
+        }
+
+        /* Glassmorphism card */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-between p-4 sm:p-6 text-gray-800">
+
+    <main class="w-full max-w-md mx-auto my-auto py-6 flex flex-col items-center">
+        
+        <!-- Tarjeta de Perfil principal -->
+        <div class="glass-card w-full rounded-3xl p-6 mb-6 shadow-xl text-center relative overflow-hidden">
+            <!-- Decoración superior -->
+            <div class="absolute top-0 left-0 right-0 h-2 gradient-bg"></div>
+
+            <!-- Avatar / Logotipo de la Marca -->
+            <div class="relative inline-block mb-4 mt-2">
+                <div class="w-32 h-32 rounded-full p-1 gradient-bg shadow-md mx-auto bg-white flex items-center justify-center overflow-hidden">
+                    <img src="https://i.postimg.cc/0yYM9PFY/LOGO-VIDA-Y-NUTRICION-SALUDABLE.png" 
+                         alt="Logotipo Vida y Nutrición Saludable" 
+                         class="w-full h-full object-cover rounded-full bg-white"
+                         onerror="this.onerror=null; this.src='https://placehold.co/200x200/28A746/ffffff?text=Vida+y+Nutricion';">
+                </div>
+                <span class="absolute bottom-1 right-1 bg-[#28A746] text-white p-1.5 rounded-full text-xs shadow-md" title="Verificado">
+                    <i class="fas fa-check-circle"></i>
+                </span>
+            </div>
+
+            <!-- Nombre y Titulación -->
+            <h1 class="text-2xl font-bold text-gray-800 tracking-tight mb-1">Vida y Nutrición Saludable</h1>
+            <p class="text-xs font-semibold uppercase tracking-wider text-[#28A746] mb-3">
+                💚 Salud y Bienestar
+            </p>
+            
+            <p class="text-sm text-gray-600 leading-relaxed mb-4 px-2">
+                📚 Recursos digitales para transformar tus hábitos y sentirte mejor cada día.<br><br>✨ Aprende sobre alimentación, bienestar, recetas saludables y cuidado natural desde casa.
+            </p>
+
+            <!-- Redes Sociales -->
+            <div class="flex justify-center space-x-3 my-2">
+                <a href="https://www.instagram.com/vida.nutrisaludable/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-gray-100 hover:bg-[#28A746] hover:text-white text-gray-600 flex items-center justify-center transition-colors shadow-sm" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/vidanutrisaludable.ec" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-gray-100 hover:bg-[#28A746] hover:text-white text-gray-600 flex items-center justify-center transition-colors shadow-sm" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://wa.me/593969254365" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-gray-100 hover:bg-[#28A746] hover:text-white text-gray-600 flex items-center justify-center transition-colors shadow-sm" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:kreadigitalec@gmail.com" class="w-9 h-9 rounded-full bg-gray-100 hover:bg-[#28A746] hover:text-white text-gray-600 flex items-center justify-center transition-colors shadow-sm" title="Correo Electrónico">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Lista de los 5 Botones de Servicios -->
+        <div class="w-full space-y-3.5 mb-8">
+
+            <!-- BOTÓN 1: Delicias Low Carb -->
+            <a href="https://deliciaslowcarbkd.lovable.app/" 
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn-card w-full rounded-2xl overflow-hidden group cursor-pointer block p-0 border-0 shadow-md">
+                <img src="https://i.postimg.cc/nhTcjfsZ/Chat-GPT-Image-19-jul-2026-17-49-43.png" 
+                     alt="Delicias Low Carb" 
+                     class="w-full h-auto object-cover rounded-2xl group-hover:scale-[1.02] transition-transform duration-300">
+            </a>
+
+            <!-- BOTÓN 2: Veganízate -->
+            <a href="https://veganizatekreadigital.lovable.app/" 
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn-card w-full rounded-2xl overflow-hidden group cursor-pointer block p-0 border-0 shadow-md">
+                <img src="https://i.postimg.cc/8zTzzzC8/Chat-GPT-Image-19-jul-2026-17-50-02.png" 
+                     alt="Veganízate" 
+                     class="w-full h-auto object-cover rounded-2xl group-hover:scale-[1.02] transition-transform duration-300">
+            </a>
+
+            <!-- BOTÓN 3: Air Fryer Book -->
+            <a href="https://fryerbookreadigital.lovable.app/" 
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn-card w-full rounded-2xl overflow-hidden group cursor-pointer block p-0 border-0 shadow-md">
+                <img src="https://i.postimg.cc/dVJVVVVf/Chat-GPT-Image-19-jul-2026-17-50-10.png" 
+                     alt="Air Fryer Recetario" 
+                     class="w-full h-auto object-cover rounded-2xl group-hover:scale-[1.02] transition-transform duration-300">
+            </a>
+
+            <!-- BOTÓN 4: Detox Natural 21 -->
+            <a href="https://detoxnatural21kreadigital.lovable.app/" 
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn-card w-full rounded-2xl overflow-hidden group cursor-pointer block p-0 border-0 shadow-md">
+                <img src="https://i.postimg.cc/nhnhhhh6/Chat-GPT-Image-19-jul-2026-17-55-41.png" 
+                     alt="Detox Natural 21 Días" 
+                     class="w-full h-auto object-cover rounded-2xl group-hover:scale-[1.02] transition-transform duration-300">
+            </a>
+
+            <!-- BOTÓN 5: El Botiquín de la Abuela -->
+            <a href="https://botiquindelabuelakd.lovable.app/" 
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn-card w-full rounded-2xl overflow-hidden group cursor-pointer block p-0 border-0 shadow-md">
+                <img src="https://i.postimg.cc/jSRSSSSp/Chat-GPT-Image-19-jul-2026-17-55-49.png" 
+                     alt="El Botiquín de la Abuela" 
+                     class="w-full h-auto object-cover rounded-2xl group-hover:scale-[1.02] transition-transform duration-300">
+            </a>
+
+        </div>
+
+        <!-- Banner CTA Estilo Catálogo (Reemplazando testimonios) -->
+        <div class="w-full gradient-bg rounded-3xl p-6 text-center mb-6 shadow-xl text-white relative overflow-hidden group">
+            <div class="relative z-10 flex flex-col items-center">
+                <!-- Título con emoji -->
+                <h2 class="text-xl font-bold tracking-tight mb-2 flex items-center justify-center space-x-2">
+                    <span>🥗</span>
+                    <span>Descubre Tu Guía Saludable</span>
+                </h2>
+                
+                <!-- Subtítulo / Descripción -->
+                <p class="text-xs sm:text-sm text-white/95 leading-relaxed mb-5 max-w-xs mx-auto font-medium">
+                    Accede a todos nuestros recetarios, guías de nutrición y planes para transformar tus hábitos hoy mismo. ✨
+                </p>
+
+                <!-- Botón CTA con enlace al catálogo -->
+                <a href="https://kreadigital.lovable.app/" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="w-full bg-white hover:bg-gray-50 text-[#28A746] font-bold py-3.5 px-6 rounded-full text-sm shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 block text-center">
+                    Explorar Todos Los Recursos 🌿
+                </a>
+            </div>
+            
+            <!-- Decoración de fondo tenue -->
+            <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-white/10 rounded-full blur-xl pointer-events-none"></div>
+            <div class="absolute -left-6 -top-6 w-24 h-24 bg-black/10 rounded-full blur-xl pointer-events-none"></div>
+        </div>
+
+        <!-- Botón para compartir bio page -->
+        <div class="flex items-center justify-center space-x-3 w-full">
+            <button onclick="copyPageLink()" class="flex-1 bg-white hover:bg-gray-50 border border-gray-200 text-gray-700 py-2.5 px-4 rounded-xl text-xs font-medium flex items-center justify-center space-x-2 transition-colors shadow-sm">
+                <i class="fas fa-share-alt text-[#28A746]"></i>
+                <span>Compartir perfil</span>
+            </button>
+            <a href="https://wa.me/593969254365" target="_blank" rel="noopener noreferrer" class="flex-1 gradient-bg hover:opacity-95 text-white py-2.5 px-4 rounded-xl text-xs font-medium flex items-center justify-center space-x-2 transition-opacity shadow-sm">
+                <i class="fab fa-whatsapp text-sm"></i>
+                <span>Escribir al WhatsApp</span>
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-4 text-center text-xs text-gray-400">
+        <p>© 2026 Vida y Nutrición Saludable - Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Modal para Detalles y Reserva del Servicio -->
+    <div id="serviceModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-3xl max-w-sm w-full p-6 shadow-2xl relative transform transition-all animate-fade-in">
+            <!-- Close Button -->
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 w-8 h-8 rounded-full flex items-center justify-center bg-gray-100">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <!-- Modal Content -->
+            <div class="text-center mb-5">
+                <div class="w-14 h-14 rounded-full bg-emerald-100 text-[#28A746] flex items-center justify-center text-2xl mx-auto mb-3">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h3 id="modalTitle" class="text-lg font-bold text-gray-800 mb-2"></h3>
+                <p id="modalDescription" class="text-xs text-gray-600 leading-relaxed"></p>
+            </div>
+
+            <!-- Modal Form / Action -->
+            <div class="space-y-3">
+                <a id="modalWhatsappBtn" href="#" target="_blank" class="w-full gradient-bg text-white font-medium py-3 rounded-xl flex items-center justify-center space-x-2 shadow-md hover:opacity-95 transition-opacity text-sm">
+                    <i class="fab fa-whatsapp text-lg"></i>
+                    <span>Agendar servicio por WhatsApp</span>
+                </a>
+                <button onclick="closeModal()" class="w-full bg-gray-100 hover:bg-gray-200 text-gray-600 font-medium py-2.5 rounded-xl text-xs transition-colors">
+                    Volver a los servicios
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast de Notificación -->
+    <div id="toast" class="fixed bottom-5 bg-gray-900 text-white text-xs px-4 py-2.5 rounded-xl shadow-lg hidden items-center space-x-2 z-50">
+        <i class="fas fa-check-circle text-[#9CC944]"></i>
+        <span id="toastMsg">Enlace copiado al portapapeles</span>
+    </div>
+
+    <script>
+        // Número de WhatsApp configurable
+        const whatsappNumber = "593969254365"; 
+
+        // Abrir Modal de servicio
+        function openModal(title, description) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDescription').innerText = description;
+            
+            // Construir mensaje predeterminado para WhatsApp
+            const message = encodeURIComponent(`Hola, estoy interesado/a en solicitar información o agendar el servicio: *${title}*.`);
+            document.getElementById('modalWhatsappBtn').href = `https://wa.me/${whatsappNumber}?text=${message}`;
+
+            const modal = document.getElementById('serviceModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        // Cerrar Modal
+        function closeModal() {
+            const modal = document.getElementById('serviceModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // Copiar Enlace al Portapapeles
+        function copyPageLink() {
+            const dummy = document.createElement('input');
+            document.body.appendChild(dummy);
+            dummy.value = window.location.href;
+            dummy.select();
+            document.execCommand('copy');
+            document.body.removeChild(dummy);
+
+            showToast("¡Enlace copiado al portapapeles!");
+        }
+
+        // Mostrar notificación Toast
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMsg').innerText = message;
+            toast.classList.remove('hidden');
+            toast.classList.add('flex');
+
+            setTimeout(() => {
+                toast.classList.add('hidden');
+                toast.classList.remove('flex');
+            }, 3000);
+        }
+
+        // Cerrar modal al hacer clic fuera
+        window.onclick = function(event) {
+            const modal = document.getElementById('serviceModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>
